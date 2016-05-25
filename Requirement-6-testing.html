@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <title>Requirement-6 Testing</title>
+</head>
+<script>
+    String.prototype.stripHtml = function(input) {
+        return input.replace(/<(?:.|\n)*?>/gm, '');
+    };
+    alert(String.prototype.stripHtml("<p>Shoplifters of the World <em>Unite</em>!</p>"));
+</script>
+
+<body>
+</body>
+
+</html>

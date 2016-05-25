@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Requirement-5 Testing</title>
+</head>
+<script>
+    var text = "hang the dj";
+    var startInput = prompt("enter starting string guess?");
+    var endInput = prompt("enter ending string guess?");
+    String.prototype.startsWith = function(passed) {
+        return text.slice(0, passed.length) === passed
+    };
+    String.prototype.endsWith = function(passed) {
+        return text.indexOf(passed, text.length - passed.length) !== -1;
+    };
+    alert("Your starting string guess is: " + String.prototype.startsWith(startInput));
+    alert("Your ending string guess is: " + String.prototype.endsWith(endInput));
+</script>
+
+<body>
+</body>
+
+</html>
